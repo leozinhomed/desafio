@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Target</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.jpg" type="image/jpg">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Desafio 1 - Verificar Número na Sequência de Fibonacci</h1>
+        <label for="number">Digite um número:</label>
+        <input type="number" id="number" name="number">
+        <button onclick="checkFibonacci()">Verificar</button>
+
+        <div class="result" id="result"></div>
+    </div>
+
+    <div class="container">
+        <h1>Desafio 2 - Verificar Letra 'a' em uma String</h1>
+        <label for="stringInput">Digite uma string:</label>
+        <input type="text" id="stringInput" name="stringInput">
+        <button onclick="checkString()">Verificar</button>
+
+        <div class="result" id="stringResult"></div>
+    </div>
+
+    <div class="container">
+        <h1>Desafio 3 - Calcular Variável SOMA</h1>
+        <p>Este programa calcula o valor da variável SOMA no trecho de código fornecido:</p>
+        <pre><code>int INDICE = 12, SOMA = 0, K = 1;
+        enquanto K &lt; INDICE faça {
+         K = K + 1; SOMA = SOMA + K;
+        }
+        imprimir(SOMA);
+        </code></pre>
+        <button onclick="calculateSoma()">Calcular SOMA</button>
+
+        <div class="result" id="somaResult"></div>
+    </div>
+
+    <div class="container">
+
+        <h1>Desafio 4 - Lógica</h1>
+        <div>
+            <p>a) 1, 3, 5, 7, <span id="answer-a"></span></p>
+            <p>b) 2, 4, 8, 16, 32, 64, <span id="answer-b"></span></p>
+            <p>c) 0, 1, 4, 9, 16, 25, 36, <span id="answer-c"></span></p>
+            <p>d) 4, 16, 36, 64, <span id="answer-d"></span></p>
+            <p>e) 1, 1, 2, 3, 5, 8, <span id="answer-e"></span></p>
+            <p>f) 2, 10, 12, 16, 17, 18, 19, <span id="answer-f"></span>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h1>Desafio 5</h1>
+        <p>Você está em uma sala com três interruptores, cada um conectado a uma lâmpada em salas diferentes. Você não
+            pode ver as lâmpadas da sala em que está, mas pode ligar e desligar os interruptores quantas vezes quiser.
+            Seu objetivo é descobrir qual interruptor controla qual lâmpada. Como você faria para descobrir, usando
+            apenas duas idas até uma das salas das lâmpadas?</p>
+        <button onclick="showSolution()">Mostrar Solução</button>
+        <p id="solution" style="display:none;">Primeiro, ligarei o primeiro interruptor e deixarei ele ligado por alguns
+            minutos. Em seguida, desligarei o primeiro interruptor e ligarei o segundo. Depois, irei até a sala das
+            lâmpadas. A lâmpada que estiver acesa será controlada pelo segundo interruptor. A lâmpada que estiver
+            desligada e quente será controlada pelo primeiro interruptor. A lâmpada que estiver desligada e fria será
+            controlada pelo terceiro interruptor."</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
